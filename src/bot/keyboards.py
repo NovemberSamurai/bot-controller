@@ -3,8 +3,8 @@ from bot.states import States
 
 def choice_keyboard():
     buttons = [
-        InlineKeyboardButton("Создать новость", callback_data='create'),
-        InlineKeyboardButton("Сохранить в базу", callback_data='save'),
+        InlineKeyboardButton("✍️", callback_data='create'),
+        InlineKeyboardButton("💾", callback_data='save'),
         InlineKeyboardButton("Отмена", callback_data='cancel'),
     ]
     return InlineKeyboardMarkup([buttons])
