@@ -31,5 +31,3 @@ jobs:
           containerAppEnvironment: managedEnvironment-switchernewsbot-8a8d
           ingress: external
           targetPort: 8080
-          environmentVariables: |
-            PORT=8080
