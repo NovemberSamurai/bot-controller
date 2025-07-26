@@ -23,7 +23,7 @@ jobs:
         with:
           appSourcePath: .
           dockerfilePath: ./Dockerfile
-          acrName: containerRegistry
+          # acrName: containerRegistry
           containerAppName: switcher-news-bot-telegram
           resourceGroup: switcher-news-bot-telegram
           containerAppEnvironment: managedEnvironment-switchernewsbot-8a8d
@@ -31,5 +31,6 @@ jobs:
           targetPort: 8080
           environmentVariables: |
             PORT=8080
+          registryUrl: containerregistry.azurecr.io
           registryUsername: ${{ secrets.ACR_USERNAME }}
           registryPassword: ${{ secrets.ACR_PASSWORD }}
