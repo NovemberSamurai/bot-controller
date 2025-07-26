@@ -31,6 +31,6 @@ jobs:
           targetPort: 8080
           environmentVariables: |
             PORT=8080
-          registryUrl: containerregistry.azurecr.io
+          registryUrl: containerregisty.azurecr.io
           registryUsername: ${{ secrets.ACR_USERNAME }}
           registryPassword: ${{ secrets.ACR_PASSWORD }}
