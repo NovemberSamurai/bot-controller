@@ -23,7 +23,8 @@ jobs:
         with:
           appSourcePath: .
           dockerfilePath: ./Dockerfile
-          acrName: containerregistry
+          acrName: containerRegisty
+          registryUrl: containerregistry.azurecr.io
           registryUsername: ${{ secrets.REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.REGISTRY_PASSWORD }}
           containerAppName: switcher-news-bot-telegram
