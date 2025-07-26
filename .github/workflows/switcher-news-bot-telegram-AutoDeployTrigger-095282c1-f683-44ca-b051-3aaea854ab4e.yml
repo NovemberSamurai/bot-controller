@@ -23,7 +23,6 @@ jobs:
         with:
           appSourcePath: .
           dockerfilePath: ./Dockerfile
-          acrName: containerRegisty
           registryUrl: containerregistry.azurecr.io
           registryUsername: ${{ secrets.REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.REGISTRY_PASSWORD }}
