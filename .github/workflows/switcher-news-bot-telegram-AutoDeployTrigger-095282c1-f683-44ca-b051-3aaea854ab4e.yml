@@ -31,5 +31,5 @@ jobs:
           targetPort: 8080
           environmentVariables: |
             PORT=8080
-          egistryUsername: ${{ secrets.ACR_USERNAME }}
+          registryUsername: ${{ secrets.ACR_USERNAME }}
           registryPassword: ${{ secrets.ACR_PASSWORD }}
